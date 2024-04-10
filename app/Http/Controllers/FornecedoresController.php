@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class FornecedoresController extends Controller
 {
-    public function fornecedore(){
-        return View('site.fornecedores');
+    public function fornecedores(){
+        $fornecedores = ['Fornecedor 1'];
+        return View('site.fornecedores', compact('fornecedores'));
     }
 }
